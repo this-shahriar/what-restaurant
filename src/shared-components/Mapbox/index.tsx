@@ -6,6 +6,12 @@ import { GiMeal } from "react-icons/gi";
 import { BsFillCursorFill } from "react-icons/bs";
 import ReactMapboxGl, { Marker } from "react-mapbox-gl";
 import { IMapBoxProp } from "../../interfaces/pages.interface";
+import 'mapbox-gl/dist/mapbox-gl.css';
+import mapboxgl from 'mapbox-gl';
+
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const Mapbox = ({ lnglat, center }: IMapBoxProp) => {
   const Map = ReactMapboxGl({
