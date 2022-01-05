@@ -15,6 +15,7 @@ import { Container } from "../../shared-components/Container";
 import { ILocationState } from "../../interfaces/redux.interface";
 import * as locationActions from "../../redux/actions/LocationActions";
 import * as restaurantActions from "../../redux/actions/RestaurantActions";
+import { defaultLocation } from "../../constants/LocationConstants";
 
 const Main = () => {
   const dispatch = useDispatch();
@@ -28,7 +29,8 @@ const Main = () => {
   );
 
   useEffect(() => {
-    if (!RestaurantList && lat) getRestaurantList(`${lat},${lng}`);
+    if (!RestaurantList && lat !== defaultLocation.lat)
+      getRestaurantList(`${lat},${lng}`);
     else if (RestaurantList) {
       let sanitizedList = [];
       if (justLoaded) {
