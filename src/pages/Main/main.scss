@@ -5,13 +5,13 @@
 }
 
 .list-desktop-view {
-  overflow: auto;
   @media screen and (max-width: 600px) {
     width: 100%;
-    max-width: calc(100vw - 8rem);
+    overflow: hidden;
   }
   @media screen and (min-width: 600px) {
     max-height: calc(100vh - 10rem);
+    overflow: auto;
   }
 }
 
@@ -21,5 +21,16 @@
   .rest-icon {
     font-size: 1.4rem;
     margin-right: 0.5rem;
+  }
+}
+.marker-wrapper {
+  display: flex;
+  @media screen and (max-width: 600px) {
+    overflow: auto;
+    flex-direction: row;
+    max-width: calc(100vw - 4rem);
+  }
+  @media screen and (min-width: 600px) {
+    flex-direction: column;
   }
 }

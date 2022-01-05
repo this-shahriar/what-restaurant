@@ -63,7 +63,11 @@ const Main = () => {
             </div>
             <Pad />
             {markers?.length > 0 ? (
-              markers.map((item, idx) => <InfoCard item={item} key={idx} />)
+              <div className="marker-wrapper">
+                {markers.map((item, idx) => (
+                  <InfoCard item={item} key={idx} />
+                ))}
+              </div>
             ) : (
               <Empty />
             )}
