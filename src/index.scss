@@ -1,0 +1,77 @@
+@import "antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ant-card {
+  border-radius: 7px;
+  background: #fafafab0;
+  border: 0;
+}
+
+.ant-btn,
+.ant-input-affix-wrapper {
+  border-radius: 7px;
+}
+
+.ant-divider {
+  margin: 0.4rem 0;
+}
+
+.ant-collapse {
+  background-color: transparent;
+  border: 0;
+
+  .ant-collapse-item {
+    border: 0;
+    .ant-collapse-item-active {
+      border: 0;
+    }
+  }
+
+  .ant-collapse-content {
+    background-color: transparent;
+    border: 0;
+  }
+
+  .ant-collapse-content-box {
+    padding: 0;
+  }
+
+  .ant-collapse-header {
+    align-items: center !important;
+    color: #fff !important;
+  }
+}
+
+.ant-tag {
+  border-radius: 7px;
+}
+
+.ant-popover-inner-content{
+  padding: 0 !important;
+  margin: 0 !important;
+}
