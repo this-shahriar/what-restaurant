@@ -1,4 +1,4 @@
-import { Button, Card, Col, Input, Row } from "antd";
+import { Input } from "antd";
 import { Pad } from "../Pad";
 import { BiSearchAlt } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
@@ -22,11 +22,6 @@ const Search = () => {
         size="large"
       />
       <Pad />
-      {/* <Row gutter={8}>
-        <Col span={6}>
-          <Button type="primary"> Get top 10</Button>
-        </Col>
-      </Row> */}
     </div>
   );
 };
