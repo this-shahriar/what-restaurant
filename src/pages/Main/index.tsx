@@ -54,7 +54,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="main-wrapper">
+    <div data-test-id="main-body" className="main-wrapper">
       <Container>
         <Card>
           <Search />
